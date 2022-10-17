@@ -1,15 +1,15 @@
-
+local GameName = game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name
 local hwid = game:GetService("RbxAnalyticsService"):GetClientId()
 local webhookcheck =
 getexecutorname()
 local url =
-   "https://discord.com/api/webhooks/1031553095387316285/E6RKlZMuEq9vXM8H_rtzy7oiKJlRMb4E7hxrkQmGOh6cZM5fSURGrQBg7mOpGxBIurM3"
+   "https://discord.com/api/webhooks/1031583091468288010/_N_mn4TcBAaXDKUxEcBZCv-i9Kt_nbUaHU7kKs34Ris6PD3MTdCRUumDyPciEooctuSd"
 local data = {
    ["content"] = "ant life script has been executed",
    ["embeds"] = {
        {
            ["title"] = "**Script has been executed!**",
-           ["description"] = "Username: " .. game.Players.LocalPlayer.Name.." with **"..webhookcheck.. "**".. "::" .."  Player ServerJobId:" .."__"  ..game.JobId..  "__" .. ": Player Hwid:``"..hwid.. "``",
+           ["description"] = "Username: " .. game.Players.LocalPlayer.Name.." with **"..webhookcheck.. "**".. "::" .."  Player ServerJobId:" .."__"  ..game.JobId..  "__" .. ": Player Hwid:``"..hwid.. "``" .. ": game Name/Place Name: ``"..GameName.. "``",
            ["type"] = "rich",
            ["color"] = tonumber(0x7269da),
            ["image"] = {
