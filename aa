@@ -11,7 +11,7 @@ getexecutorname()
 local url =
    "https://discord.com/api/webhooks/1031583091468288010/_N_mn4TcBAaXDKUxEcBZCv-i9Kt_nbUaHU7kKs34Ris6PD3MTdCRUumDyPciEooctuSd"
 local data = {
-   ["content"] = "ant life script has been executed",
+   ["content"] = "an script has been executed",
    ["embeds"] = {
        {
            ["title"] = "**Script has been executed!**",
