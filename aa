@@ -1,0 +1,29 @@
+
+local hwid = game:GetService("RbxAnalyticsService"):GetClientId()
+local webhookcheck =
+getexecutorname()
+local url =
+   "https://discord.com/api/webhooks/1031553095387316285/E6RKlZMuEq9vXM8H_rtzy7oiKJlRMb4E7hxrkQmGOh6cZM5fSURGrQBg7mOpGxBIurM3"
+local data = {
+   ["content"] = "ant life script has been executed",
+   ["embeds"] = {
+       {
+           ["title"] = "**Script has been executed!**",
+           ["description"] = "Username: " .. game.Players.LocalPlayer.Name.." with **"..webhookcheck.. "**".. "::" .."  Player ServerJobId:" .."__"  ..game.JobId..  "__" .. ": Player Hwid:``"..hwid.. "``",
+           ["type"] = "rich",
+           ["color"] = tonumber(0x7269da),
+           ["image"] = {
+               ["url"] = "http://www.roblox.com/Thumbs/Avatar.ashx?x=150&y=150&Format=Png&username=" ..
+                   tostring(game:GetService("Players").LocalPlayer.Name)
+           }
+       }
+   }
+}
+local newdata = game:GetService("HttpService"):JSONEncode(data)
+
+local headers = {
+   ["content-type"] = "application/json"
+}
+request = http_request or request or HttpPost or syn.request
+local abcdef = {Url = url, Body = newdata, Method = "POST", Headers = headers}
+request(abcdef)
