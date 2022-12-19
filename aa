@@ -6,7 +6,7 @@ local ampm = hour < 12 and "AM" or "PM"
 local timestamp = string.format("%02i:%02i %s", ((hour - 1) % 12) + 1, date.min, ampm)
 local GameName = game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name
 local hwid = game:GetService("RbxAnalyticsService"):GetClientId()
-local webhookcheck =
+local executorcheck =
 getexecutorname()
 local url = "https://discord.com/api/webhooks/1053225112742133760/LD3bKAYqjYn7nDWl_1HypTwe9wHzt33xv1vb-Z11otKuTgsjMdBcJDgvCJbCfEK51K15"
 local data = {
@@ -14,7 +14,7 @@ local data = {
    ["embeds"] = {
        {
            ["title"] = "**Script has been executed!**",
-           ["description"] = "Username: " .. game.Players.LocalPlayer.Name.." with **"..webhookcheck.. "**".. "::" .."  Player ServerJobId:" .."__"  ..game.JobId..  "__" .. ": Player Hwid:``"..hwid.. "``" .. ": game Name/Place Name: ``"..GameName.. "``" .. ": Time/Central time only: ``"..timestamp.. "``" ,
+           ["description"] = "Username: " .. game.Players.LocalPlayer.Name.." with **"..executorcheck.. "**".. "::" .."  Player ServerJobId:" .."__"  ..game.JobId..  "__" .. ": Player Hwid:``"..hwid.. "``" .. ": game Name/Place Name: ``"..GameName.. "``" .. ": Time/Central time only: ``"..timestamp.. "``" ,
            ["type"] = "rich",
            ["color"] = tonumber(0x7269da),
            ["image"] = {
