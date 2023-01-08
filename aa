@@ -7,7 +7,11 @@ local timestamp = string.format("%02i:%02i %s", ((hour - 1) % 12) + 1, date.min,
 local GameName = game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name
 local hwid = game:GetService("RbxAnalyticsService"):GetClientId()
 local executorcheck =
-getexecutorname()
+   is_sirhurt_closure and "Sirhurt" or pebc_execute and "ProtoSmasher" or syn and "Synapse X" or
+   secure_load and "Sentinel" or
+   KRNL_LOADED and "Krnl" or
+   SONA_LOADED and "Sona" or
+   "Kid with shit exploit"
 local url = "https://discord.com/api/webhooks/1053225112742133760/LD3bKAYqjYn7nDWl_1HypTwe9wHzt33xv1vb-Z11otKuTgsjMdBcJDgvCJbCfEK51K15"
 local data = {
 ["content"] = "an script has been executed",
